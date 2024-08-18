@@ -1,14 +1,19 @@
 import { IContact } from "../../types";
 
 interface CardProps {
-  list: IContact;
+  cardDetails: IContact;
   onEditClick: (id: string) => void;
   onDeleteClick: (id: string) => void;
   onViewClick: (id: string) => void;
 }
 
-const Card = ({ list, onDeleteClick, onEditClick, onViewClick }: CardProps) => {
-  const { firstName, lastName, id, isActive } = list;
+const Card = ({
+  cardDetails,
+  onDeleteClick,
+  onEditClick,
+  onViewClick,
+}: CardProps) => {
+  const { firstName, lastName, id, isActive } = cardDetails;
   const status = isActive === "true" ? "active" : "inActive";
   return (
     <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow">
@@ -24,7 +29,7 @@ const Card = ({ list, onDeleteClick, onEditClick, onViewClick }: CardProps) => {
         <span className="text-sm text-gray-500 capitalize ">
           Status: {status}
         </span>
-        <div className="flex flex-wrap mt-4 lg:gap-0 gap-2 md:mt-6">
+        <div className="flex flex-wrap mt-4 lg:gap-0gap-2 md:mt-6">
           <button
             className="py-2 px-4 ms-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100  focus:z-10 focus:ring-4 focus:ring-gray-100"
             onClick={() => onViewClick(id)}

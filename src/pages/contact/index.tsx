@@ -43,7 +43,7 @@ function Contact() {
             {_.map(contactList, (contact) => {
               return (
                 <Card
-                  list={contact}
+                  cardDetails={contact}
                   onDeleteClick={(id) => dispatch(handleDeleteContact(id))}
                   onEditClick={handleEditButtonClick}
                   onViewClick={handleViewButtonClick}
