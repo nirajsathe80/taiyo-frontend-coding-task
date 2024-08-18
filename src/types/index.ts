@@ -12,26 +12,24 @@ export interface IContact extends FormValue {
   id: string;
 }
 
-export interface IAllCovidCases {
-  updated: number;
+export interface ILineGraphParam {
+  recovered: Record<string, number>;
+  total: Record<string, number>;
+  deaths: Record<string, number>;
+}
+
+export interface ICovidCaseByCountry {
+  country: string;
   cases: number;
-  todayCases: number;
-  deaths: number;
-  todayDeaths: number;
   recovered: number;
-  todayRecovered: number;
+  deaths: number;
+  countryInfo: CountryInfo;
   active: number;
-  critical: number;
-  casesPerOneMillion: number;
-  deathsPerOneMillion: number;
-  tests: number;
-  testsPerOneMillion: number;
-  population: number;
-  oneCasePerPeople: number;
-  oneDeathPerPeople: number;
-  oneTestPerPeople: number;
-  activePerOneMillion: number;
-  recoveredPerOneMillion: number;
-  criticalPerOneMillion: number;
-  affectedCountries: number;
+}
+
+export interface CountryInfo {
+  _id: string;
+  lat: number;
+  long: number;
+  flag: string;
 }
