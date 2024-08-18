@@ -13,7 +13,6 @@ function Sidebar() {
     <div className="md:w-[25%] w-full flex md:flex-col flex-row md:justify-start justify-between md:items-start items-center md:max-w-[25%] bg-[rgb(251,211,99)] md:h-[100dvh] h-auto md:fixed relative md:p-6 p-2 ">
       <img
         src="https://taiyo.ai/wp-content/uploads/Taiyo-logo.png"
-        alt="logo"
         className="w-auto md:h-12 h-6"
       />
       <div className="flex md:flex-col flex-row gap-6 text-white font-medium md:my-10 my-4 md:text-2xl text-sm">

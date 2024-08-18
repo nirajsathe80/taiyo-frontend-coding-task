@@ -31,11 +31,7 @@ const CovidMap = ({ countryList }: CovidMapProps) => {
             >
               <Popup>
                 <div>
-                  <img
-                    src={countryInfo.flag}
-                    alt="country"
-                    className="h-6 mb-1"
-                  />
+                  <img src={countryInfo.flag} className="h-6 mb-1" />
                   <h3>{cntry}</h3>
                   <p>
                     <strong>Active Cases:</strong> {active}

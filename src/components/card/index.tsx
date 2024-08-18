@@ -21,7 +21,6 @@ const Card = ({
         <img
           className="w-24 h-24 mb-3 rounded-full shadow-lg"
           src="https://static.vecteezy.com/system/resources/thumbnails/002/002/257/small/beautiful-woman-avatar-character-icon-free-vector.jpg"
-          alt="Bonnie image"
         />
         <h5 className="mb-1 text-xl font-medium text-gray-900">
           {firstName} {lastName}
