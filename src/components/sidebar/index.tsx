@@ -5,7 +5,7 @@ function Sidebar() {
 
   const isHomePage = pathname === "/";
   const isContactPage = pathname === "/contact";
-  const isChartAndMapsPage = pathname === "/chars-and-maps";
+  const isChartAndMapsPage = pathname === "/charts-and-maps";
 
   const isActiveClass = "underline font-bold text-black";
 
