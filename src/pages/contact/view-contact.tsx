@@ -18,6 +18,7 @@ const ViewContact = () => {
       contactList,
       (contact) => _.parseInt(contact.id) === _.parseInt(id as string)
     );
+    // eslint-disable-next-line
   }, [id]);
   return (
     <Layout>
