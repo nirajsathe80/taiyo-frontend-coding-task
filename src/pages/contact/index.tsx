@@ -52,7 +52,7 @@ function Contact() {
             })}
           </div>
         ) : (
-          <div className="text-center mt-10 font-medium text-xl">
+          <div className="text-center mt-10 font-medium md:text-xl text-sm">
             Please add details in contact list by clicking on above button
           </div>
         )}
