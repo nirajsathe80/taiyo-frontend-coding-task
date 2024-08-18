@@ -44,3 +44,33 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+## Pages
+
+Homepage = https://task-management-1tjcyoib8-niraj-sathes-projects.vercel.app
+
+Contact = https://task-management-1tjcyoib8-niraj-sathes-projects.vercel.app/contact
+
+view contact = https://task-management-1tjcyoib8-niraj-sathes-projects.vercel.app/contact/id
+
+edit contatc = https://task-management-1tjcyoib8-niraj-sathes-projects.vercel.app/contact/id/edit
+
+charts and maps = https://task-management-1tjcyoib8-niraj-sathes-projects.vercel.app/charts-and-maps
+
+## Api's used
+
+1. covid cases by country wise --- https://disease.sh/v3/covid-19/countries
+
+2. covid all cases --- https://disease.sh/v3/covid-19/all
+
+3. covid cases date wise ---- https://disease.sh/v3/covid-19/historical/all?lastdays=all
+
+## packages used
+
+1. lodash
+2. react toolkit
+3. react query
+4. react leaflet
+5. react router dom
+6. axios
+7. chart js
