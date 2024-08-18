@@ -3,7 +3,6 @@ import { useMemo } from "react";
 import { useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import ContactForm from "../../components/contact-form";
-import Sidebar from "../../components/sidebar";
 import Layout from "../../layout";
 import { RootState } from "../../store/store";
 

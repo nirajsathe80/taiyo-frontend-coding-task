@@ -2,7 +2,6 @@ import _ from "lodash";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import ContactForm from "../../components/contact-form";
-import Sidebar from "../../components/sidebar";
 import Layout from "../../layout";
 import { updateContactList } from "../../store/contactSlice";
 import { RootState } from "../../store/store";
