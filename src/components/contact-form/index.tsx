@@ -34,6 +34,8 @@ const ContactForm = ({
     setFormValues((prev) => ({ ...prev, [name]: value }));
   };
 
+  const btnText = isEditForm ? "Update Contact" : "Create Contact";
+
   return (
     <form
       className="max-w-sm mx-auto mt-10 p-4"
@@ -98,14 +100,8 @@ const ContactForm = ({
           <option value={"false"}>False</option>
         </select>
       </div>
-      {type === "view" ? (
-        <></>
-      ) : (
-        <Button
-          buttonText={isEditForm ? "Update Contact" : "Create Contact"}
-          type="submit"
-        />
-      )}
+
+      {type === "view" ? <></> : <Button buttonText={btnText} type="submit" />}
     </form>
   );
 };
