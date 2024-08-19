@@ -2,11 +2,9 @@ import { Link, useLocation } from "react-router-dom";
 
 function Sidebar() {
   const { pathname } = useLocation();
-
   const isHomePage = pathname === "/";
-  const isContactPage = pathname === "/contact";
+  const isContactPage = String(pathname).includes("contact");
   const isChartAndMapsPage = pathname === "/charts-and-maps";
-
   const isActiveClass = "underline font-bold text-black";
 
   return (
