@@ -25,7 +25,7 @@ const NewContact = () => {
   return (
     <Layout>
       <>
-        <div className="text-center text-2xl p-3 font-semibold bg-[rgba(0,0,0,0.8)] text-[rgba(255,255,255,0.88)] p-4">
+        <div className="text-center  md:text-2xl text-base  font-semibold bg-[rgba(0,0,0,0.8)] text-[rgba(255,255,255,0.88)] p-4">
           Create contact
         </div>
         <ContactForm

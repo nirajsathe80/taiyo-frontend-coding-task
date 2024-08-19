@@ -65,7 +65,7 @@ const CasesChart: React.FC = () => {
           <Loader />
         ) : (
           <>
-            <div className="text-center text-2xl p-3 font-semibold bg-[rgba(0,0,0,0.8)] text-[rgba(255,255,255,0.88)] mb-8">
+            <div className="text-center md:text-2xl text-base p-3 font-semibold bg-[rgba(0,0,0,0.8)] text-[rgba(255,255,255,0.88)] mb-8">
               Charts And Maps
             </div>
             <div className="m-6">
