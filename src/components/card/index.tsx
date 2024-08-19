@@ -13,8 +13,9 @@ const Card = ({
   onEditClick,
   onViewClick,
 }: CardProps) => {
-  const { firstName, lastName, id, isActive } = cardDetails;
+  const { firstName, lastName, id, isActive } = cardDetails ?? {};
   const status = isActive === "true" ? "active" : "inActive";
+
   return (
     <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow">
       <div className="flex flex-col items-center pb-10">
