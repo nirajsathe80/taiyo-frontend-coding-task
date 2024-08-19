@@ -28,7 +28,7 @@ ChartJS.register(
   Title,
   Tooltip,
   Legend
-);
+); // Need to register inorder to work properly
 
 const CasesChart: React.FC = () => {
   const {
@@ -64,7 +64,7 @@ const CasesChart: React.FC = () => {
         {covidCaseByDateLoading || countrySpecificCovidCaseLoading ? (
           <Loader />
         ) : (
-          <div className="">
+          <>
             <div className="text-center text-2xl p-3 font-semibold bg-[rgba(0,0,0,0.8)] text-[rgba(255,255,255,0.88)] mb-8">
               Charts And Maps
             </div>
@@ -76,7 +76,7 @@ const CasesChart: React.FC = () => {
               {/* Country Map*/}
               <CovidMap countryList={countrySpecificCovidCases} />
             </div>
-          </div>
+          </>
         )}
         {(covidCaseByDateError || countrySpecificCovidCaseError) && (
           <p>Error while fetching the covid data</p>
